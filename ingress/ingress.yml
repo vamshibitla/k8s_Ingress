@@ -11,24 +11,24 @@ spec:
   rules:
   - http:
       paths:
-      - path: /nginx(/|$)(.*)
+      - path: /vamsi
         pathType: Prefix
         backend:
           service:
-            name: nginx
+            name: svc1
             port:
               number: 80
-      - path: /httpd(/|$)(.*)
+      - path: /mustafa
         pathType: Prefix
         backend:
           service:
-            name: httpd
+            name: svc2
             port:
               number: 80
-      - path: /(.*)
+      - path: /sai
         pathType: Prefix
         backend:
           service:
-            name: nginx
+            name: svc3
             port:
               number: 80
