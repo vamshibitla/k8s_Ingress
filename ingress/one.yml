@@ -24,9 +24,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: svc1
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 80
   selector:
